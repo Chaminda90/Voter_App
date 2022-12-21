@@ -41,7 +41,7 @@ substitutions:
     
     
 
-    #_VERSION: v4.0asdf
+    #_VERSION: v4.0asdfsdafdasfasf
     
 options:
     substitution_option: 'ALLOW_LOOSE'
