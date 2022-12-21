@@ -1,21 +1,21 @@
 steps:
   # Docker Build
-  - name: 'gcr.io/moonlit-text-372318/docker'
-  #- name: 'gcr.io/cloud-builders/docker'
+  #- name: 'gcr.io/moonlit-text-372318/docker'
+  - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 
            'gcr.io/${_PROJECT_ID}/my-image:$SHORT_SHA', 
            '.']
 
   # Docker Push
-  #- name: 'gcr.io/cloud-builders/docker'
-  - name: 'gcr.io/moonlit-text-372318/docker'
+  - name: 'gcr.io/cloud-builders/docker'
+  #- name: 'gcr.io/moonlit-text-372318/docker'
     args: ['push', 
            'gcr.io/${_PROJECT_ID}/my-image:$SHORT_SHA']
   
 
 
-  #- name: 'gcr.io/cloud-builders/gcloud'
-  - name: 'gcr.io/moonlit-text-372318/gcloud'
+  - name: 'gcr.io/cloud-builders/gcloud'
+  #- name: 'gcr.io/moonlit-text-372318/gcloud'
     entrypoint: /bin/sh
     args:
     - '-c'
