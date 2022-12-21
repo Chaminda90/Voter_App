@@ -26,8 +26,8 @@ steps:
   
 substitutions:
 
-    _PROJECT_ID: aerobic-gantry-372204
-    _ZONE: asia-east1
+    _PROJECT_ID: moonlit-text-372318
+    _ZONE: asia-south1
     _GKE_CLUSTER: autopilot-cluster-1
 
     #_DEPLOYMENTNAME: node
