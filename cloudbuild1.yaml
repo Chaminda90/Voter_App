@@ -1,28 +1,24 @@
 steps:
   # Docker Build
-  #- name: 'gcr.io/moonlit-text-372318/docker'
-  - name: 'gcr.io/cloud-builders/docker'
+   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 
            'gcr.io/${_PROJECT_ID}/my-image:$SHORT_SHA', 
            '.']
 
   # Docker Push
   - name: 'gcr.io/cloud-builders/docker'
-  #- name: 'gcr.io/moonlit-text-372318/docker'
     args: ['push', 
            'gcr.io/${_PROJECT_ID}/my-image:$SHORT_SHA']
   
 
 
   - name: 'gcr.io/cloud-builders/gcloud'
-  #- name: 'gcr.io/moonlit-text-372318/gcloud'
     entrypoint: /bin/sh
     args:
     - '-c'
     - |
       sed "s|VAR_IMAGE|gcr.io/${_PROJECT_ID}/my-image:$SHORT_SHA|g"  kubernetes.yaml > kubernetes.yaml
-    - name:   'gcr.io/moonlit-text-372318/kubectl'
-  #- name: 'gcr.io/cloud-builders/kubectl'
+  - name: 'gcr.io/cloud-builders/kubectl'
     args: ['apply', '-f', 'kubernetes.yaml']
     env:
     - 'CLOUDSDK_COMPUTE_ZONE=${_ZONE}'
@@ -37,7 +33,7 @@ substitutions:
     #_DEPLOYMENTNAME: node
     #_CONTAINERNAME: node    
     #_REPO_NAME: apigateway
-    #_VERSION: v4.0
+    _VERSION: v1.0
     
 
     
