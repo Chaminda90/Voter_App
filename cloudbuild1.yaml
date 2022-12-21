@@ -1,6 +1,6 @@
 steps:
   # Docker Build
-   - name: 'gcr.io/cloud-builders/docker'
+  - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 
            'gcr.io/${_PROJECT_ID}/my-image:$SHORT_SHA', 
            '.']
@@ -33,7 +33,7 @@ substitutions:
     #_DEPLOYMENTNAME: node
     #_CONTAINERNAME: node    
     #_REPO_NAME: apigateway
-    _VERSION: v1.0
+    #_VERSION: v4.0
     
 
     
@@ -41,7 +41,7 @@ substitutions:
     
     
 
-    #_VERSION: v4.0
+    #_VERSION: v4.0asdfsdafdasfasf
     
 options:
     substitution_option: 'ALLOW_LOOSE'
