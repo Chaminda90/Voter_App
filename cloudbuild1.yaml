@@ -18,7 +18,7 @@ steps:
     - '-c'
     - |
       sed "s|VAR_IMAGE|gcr.io/${_PROJECT_ID}/my-image:$SHORT_SHA|g"  Kubernetes1.yaml > kubernetes.yaml
-  - name: 'gcr.io/cloud-builders/kubectl'
+  - name: 'gcr.io/cloud-builders/kubectl1'
     args: ['apply', '-f', 'kubernetes.yaml']
     env:
     - 'CLOUDSDK_COMPUTE_ZONE=${_ZONE}'
