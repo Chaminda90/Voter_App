@@ -36,12 +36,12 @@ substitutions:
     _VERSION: v4.0
     
 
-    # _DEPLOYMENTNAME: pulsebackrepo
+    
     # _CONTAINERNAME: pulsebackrepo    
     
     
 
-    # _VERSION: v4.0
+    #_VERSION: v4.0
     
 options:
     substitution_option: 'ALLOW_LOOSE'
