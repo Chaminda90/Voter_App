@@ -28,7 +28,7 @@ substitutions:
 
     _PROJECT_ID: moonlit-text-372318
     _ZONE: asia-east1
-    _GKE_CLUSTER: autopilot-cluster-1
+    _GKE_CLUSTER: autopilot-cluster-2
 
     #_DEPLOYMENTNAME: node
     #_CONTAINERNAME: node    
