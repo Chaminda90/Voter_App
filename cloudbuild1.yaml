@@ -30,10 +30,10 @@ substitutions:
     _ZONE: asia-east1
     _GKE_CLUSTER: autopilot-cluster-1
 
-    _DEPLOYMENTNAME: node
-    _CONTAINERNAME: node    
-    _REPO_NAME: apigateway
-    _VERSION: v4.0
+    #_DEPLOYMENTNAME: node
+    #_CONTAINERNAME: node    
+    #_REPO_NAME: apigateway
+    #_VERSION: v4.0
     
 
     
