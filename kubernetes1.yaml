@@ -1,7 +1,7 @@
-apiVersion: apps/v2
+apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment-Voter-App-dev
+  name: nginx-deployment-cloud-builders-dev
   labels:
     app: nginx
 spec:
@@ -27,7 +27,7 @@ metadata:
   creationTimestamp: null
   labels:
     app: nginx
-  name: Voter-App-dev
+  name: cloud-builders-dev
 spec:
   ports:
   - port: 8080
