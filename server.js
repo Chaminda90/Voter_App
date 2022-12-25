@@ -1,7 +1,7 @@
 const Hapi = require('@hapi/hapi');
 const mysql = require('mysql');
 const con = mysql.createConnection({
-    host: "34.80.165.62",
+    host: "10.76.240.4",
     port: "3306",
     user: "voterbdmysql",
     password: "asd@123",
