@@ -32,7 +32,7 @@ substitutions:
 
     #_DEPLOYMENTNAME: node
     #_CONTAINERNAME: node    
-    #_REPO_NAME: apigateway
+    #_REPO_NAME: apigatewaygf
     #_VERSION: v4.0
     
 
