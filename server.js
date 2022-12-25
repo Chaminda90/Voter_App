@@ -1,11 +1,18 @@
 const Hapi = require('@hapi/hapi');
 const mysql = require('mysql');
 const con = mysql.createConnection({
-    host: "127.0.0.1",
+    host: "34.80.165.62",
     port: "3306",
-    user: "root",
-    password: "root",
+    user: "voterbdmysql",
+    password: "asd@123",
     database: "voter_db",
+    //--
+    //host: "127.0.0.1",
+    //port: "3306",
+    //user: "root",
+    //password: "root",
+    //database: "voter_db",
+    //--
     insecureAuth : true
  });
 
