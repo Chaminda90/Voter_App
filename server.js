@@ -26,7 +26,7 @@ server.route({
 method: 'GET',
 path: '/',
 handler: (request, h) => {
-return "Online Voter Registration - California, USA";
+return "Online Voter Registration - California, USAss";
 }
 });
 
@@ -131,7 +131,7 @@ return resolve(results);
 
 function getCreateVoters(list) {
 return new Promise((resolve, reject) => {
-con.query('INSERT INTO user ( name, amount) VALUES ("' + user.name +'","' +
+con.query('INSERT INTO user ( name, vote_type) VALUES ("' + user.name +'","' +
 stock.amount + '")', [], function (error, results) {
 if (error) {
 return reject(error)
