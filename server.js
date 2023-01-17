@@ -26,7 +26,7 @@ server.route({
 method: 'GET',
 path: '/',
 handler: (request, h) => {
-return "Online Voter Registration - California, USAss";
+return "Online Voter Registration - California,";
 }
 });
 
